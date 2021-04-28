@@ -32,7 +32,7 @@ function randomNum(max, min){
 
 //genera lettera Maiuscola random
 function randomLetter(){
-  var letters = "ABCDEFGHILMNOPQRSTUVYXZ";
+  var letters = "ABCDEFGHILMNOPQRSTUVWYXZ";
   var letter = letters[randomNum((letters.length - 1), 0)];
   return letter;
 }

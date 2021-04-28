@@ -15,15 +15,19 @@ $(function(){
 
   //ciclo while finchè non ho creato i codici per tutti i giocatori
   while(players > 0){
+
     var newCode = generateCode(limit, limit);
     var newMedia = randomNum (50, 0);
     var newSucc = randomNum (100, 0);
+
     arrTeam.push({
       codice: newCode,
       media: newMedia,
       successo: newSucc
     });
+    
     players--;
+
   }
 
   console.log(arrTeam);
@@ -42,7 +46,7 @@ function randomNum(max, min){
 
 //genera lettera Maiuscola random
 function randomLetter(){
-  var letters = "ABCDEFGHILMNOPQRSTUVYXZ";
+  var letters = "ABCDEFGHILMNOPQRSTUVWYXZ";
   var letter = letters[randomNum((letters.length - 1), 0)];
   return letter;
 }
